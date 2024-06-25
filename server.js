@@ -7,6 +7,7 @@ const app = express();
 const port = 5001;
 app.use(cors());
 connectDb();
+
 app.use(express.json());
 app.use('/api', router)
 app.listen(port, () => {
