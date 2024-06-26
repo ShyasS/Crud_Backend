@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDb = async () => {
     try {
-        const connect = await mongoose.connect('mongodb+srv://admin:admin@nodecluster.xjvbu9c.mongodb.net/NodeCrud?retryWrites=true&w=majority&appName=NodeCluster');
+        const connect = await mongoose.connect('mongodb+srv://user:user@nodecluster.xjvbu9c.mongodb.net/NodeCrud?retryWrites=true&w=majority&appName=NodeCluster');
         console.log('Database Connected', connect.connection.host, connect.connection.name);
     }
     catch(err){
